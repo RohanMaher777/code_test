@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "95bfaf6f-b91d-47ed-bbdd-d27d71c39cb5",
+		"name": "shweta_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26185345",
+		"_collection_link": "https://insta-gift.postman.co/workspace/InstaGift-Workspace~7e8e50ce-dcc6-4212-8a23-4624f529445d/collection/26185345-95bfaf6f-b91d-47ed-bbdd-d27d71c39cb5?action=share&source=collection_link&creator=26185345"
+	},
+	"item": [
+		{
+			"name": "user_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"maru\",\r\n    \"email\" : \"maru@123gmail.com\",\r\n    \"password\": \"shweta123\",\r\n    \"deviceId\" :\"jkla12h\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8500/registration"
+			},
+			"response": []
+		},
+		{
+			"name": "get access token in the browser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8500/accesstoken"
+			},
+			"response": []
+		},
+		{
+			"name": "send_message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\" : \"Hello \",\r\n    \"senderId\" : \"3\",\r\n    \"receiverId\" : \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8500/sendMessage"
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8500/getAllMessage"
+			},
+			"response": []
+		}
+	]
+}
