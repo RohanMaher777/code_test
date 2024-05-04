@@ -1,5 +1,5 @@
 
-const express = require("express")
+const express = require("express");
 const router = express.Router()
 const {createUser} = require("../controllers/userRegistration")
 const {generate_access_token} = require("../middleware/userAuthencation")

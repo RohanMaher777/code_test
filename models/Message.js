@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize')
-const sequelize = require('../dbConfig')
+const sequelize = require('../dbConfig');
 const Message = sequelize.define("Message",{
     id : {
         type : DataTypes.BIGINT,

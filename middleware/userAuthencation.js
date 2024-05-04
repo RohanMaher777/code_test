@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 const user = require('../models/userSchema')
 const generateToken = require('../services/generateToken')
-const refreshSecretkey = 'jsonweb123'
+const refreshSecretkey = 'jsonweb123';
 
 exports.generate_access_token = async (req, res) => {
     try {
